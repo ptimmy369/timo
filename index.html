@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Volunteer front end developer" />
+    <meta property="og:title" content="Timo - The WebDev Guy" />
+    <meta property="og:description" content="Volunteer front end developer" />
+    <title>Timo - Web Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  </head>
+  <body>
+    <header id="top">
+      <nav class="nav collapsible">
+        <a href="/"
+          ><img class="nav__logo-image" src="images/website-logo.svg" alt=""
+        /></a>
+        <img class="nav__menu-icon" src="images/menu-icon.svg" alt="" />
+        <ul class="nav__list collapsible__content">
+          <li class="nav__item"><a href="/" data-text="Home">Home</a></li>
+          <li class="nav__item">
+            <a href="#gallery" data-text="Gallery">Gallery</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" data-text="Contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="block block--dark-nav block--skewed-left">
+        <div class="container grid">
+          <h1 class="banner__heading">&lt;Timo&gt;</h1>
+          <img
+            class="banner__image"
+            src="images/banner.svg"
+            alt=""
+            width="350"
+            height="350"
+          />
+        </div>
+      </section>
+    </header>
+    <aside>
+      <section class="block aside__block">
+        <div class="container grid">
+          <h2 class="aside__heading">The WebDev Guy!</h2>
+          <p class="aside__text">
+            Hello! Below are some card and media components to explain a little
+            about myself. I am building a portfolio for my web dev skills. With
+            coding, it's use it or lose it with me, so I have to build websites.
+            I figure I might as well volunteer my skills to a righteous
+            individual who needs one. Therefore, If you have a non-profit or
+            type of organization that exemplifies humanity and you need a webdev
+            guy, hit the contact button!
+          </p>
+          <a href="#contact" class="btn btn--block">Contact</a>
+          <h2 class="aside__aux-text">My Hobbies</h2>
+        </div>
+      </section>
+    </aside>
+
+    <div id="gallery"></div>
+    <section class="block content__block">
+      <div class="aside__card">
+        <div class="card card--primary">
+          <header class="card__header">Cycling</header>
+          <div class="card__body">
+            <img
+              src="images/mtb.jpg"
+              class="card__image"
+              alt="A mountain bike propped against rocks in the desert"
+            />
+          </div>
+        </div>
+        <div class="card card--primary">
+          <header class="card__header">Music</header>
+          <div class="card__body">
+            <img
+              src="images/music.jpg"
+              class="card__image"
+              alt="A group of instruments with a keyboard in front and guitars in back"
+            />
+          </div>
+        </div>
+        <div class="card card--primary">
+          <header class="card__header">Fashion</header>
+          <div class="card__body">
+            <img
+              src="images/socks.jpg"
+              class="card__image"
+              alt="A foot with Pickle Rick socks"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block content__block media__container">
+      <header>
+        <div class="media__heading">
+          <p class="media__header">Pets</p>
+        </div>
+      </header>
+      <footer class="media__content">
+        <div class="media">
+          <div class="media__image">
+            <img
+              src="images/kame.jpg"
+              alt="Large Sulcata tortoise eating carrots"
+            />
+          </div>
+          <div class="media__body">
+            <h3 class="media__title">Turbo or Kame(Ka-meh)</h3>
+            <p class="media__text">
+              A descedent of Gamera in the Godzilla movies(ha-ha!)He is actually
+              a Sulcata or African Spurred toroise. He was found foraging, so
+              age is unknown, but over 10 years old due to his weight. His
+              special powers involve Ninja like abilities, that he uses to sneak
+              up and scare you half to death.
+            </p>
+          </div>
+        </div>
+        <div class="media">
+          <div class="media__image">
+            <img src="images/kc.jpg" alt="Sleeping Jack Russell Terrior" />
+          </div>
+          <div class="media__body">
+            <h3 class="media__title">KC or Dummy-Butt</h3>
+            <p class="media__text">
+              A Jack Russell Terrosist to the extreme. He is a rescue from going
+              to the pound. His parents were both Jack Russells, but Poppa was a
+              stray without papers; he isn't pedigree, but we love him all the
+              same. His special qualities is to hate everyone in the world,
+              especially Turbo, and not me.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <aside>
+      <div class="block container">
+        <p class="aside__aux-text">Outro</p>
+        <p class="aside__text">
+          My name is Timothy Pennington and that was a little about me and the
+          crew I roll with at home. Again, if you are a humanitarian with a
+          cause and I can be of assistance, contact me.
+        </p>
+      </div>
+    </aside>
+    <footer id="contact">
+      <section class="block block--dark">
+        <fieldset class="footer__fieldset">
+          <legend class="footer__legend">Contact Info</legend>
+          <div class="fieldset__block">
+            <label for="fname">Name:</label><br />
+
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              class="footer__text"
+              maxlength="45"
+            /><br />
+            <label for="phone">Email:</label><br />
+            <input
+              type="email"
+              name="email"
+              id="phone"
+              class="footer__text"
+              maxlength="40"
+            /><br />
+            <label for="message">Message:</label><br />
+            <textarea
+              name="message"
+              id="message"
+              class="footer__textarea"
+              cols="15"
+              rows="5"
+              maxlength="100"
+            ></textarea>
+          </div>
+          <div class="fieldset__text-block">
+            <h3 class="fieldset__heading">Important:</h3>
+            <p>
+              I do not sell anyone's information or spam people. The reason I
+              ask for name and email is for communication with a potential
+              colleague and that reason solely.
+            </p>
+            <br /><br />
+            <a href="#top" class="footer__link">Top</a>
+          </div>
+        </fieldset>
+      </section>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
