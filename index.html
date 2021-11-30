@@ -153,34 +153,37 @@
         <fieldset class="footer__fieldset">
           <legend class="footer__legend">Contact Info</legend>
           <div class="fieldset__block">
-            <label for="fname">Name:</label><br />
-
-            <input
-              type="text"
-              id="fname"
-              name="fname"
-              class="footer__text"
-              maxlength="45"
-            /><br />
-            <label for="phone">Email:</label><br />
-            <input
-              type="email"
-              name="email"
-              id="phone"
-              class="footer__text"
-              maxlength="40"
-            /><br />
-            <label for="message">Message:</label><br />
-            <textarea
-              name="message"
-              id="message"
-              class="footer__textarea"
-              cols="15"
-              rows="5"
-              maxlength="100"
-            ></textarea
-            ><br />
-            <button class="btn__submit">Submit form</button>
+            <form action="https://formspree.io/f/xwkyewop" method="post">
+              <label for="fname">Name:</label><br />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="footer__text"
+                maxlength="45"
+                required
+              /><br />
+              <label for="phone">Email:</label><br />
+              <input
+                type="email"
+                name="email"
+                id="phone"
+                class="footer__text"
+                maxlength="40"
+                required
+              /><br />
+              <label for="message">Message:</label><br />
+              <textarea
+                name="message"
+                id="message"
+                class="footer__textarea"
+                cols="15"
+                rows="5"
+                maxlength="100"
+              ></textarea
+              ><br />
+              <button class="btn__submit">Submit form</button>
+            </form>
           </div>
           <div class="fieldset__text-block">
             <h3 class="fieldset__heading">Important:</h3>
